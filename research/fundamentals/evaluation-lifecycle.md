@@ -64,6 +64,23 @@ This collection is called
 
 >Evaluation Dataset
 
+There are actually THREE main sources of evaluation data.
+
+1. Synthetic
+
+   Generated conversations
+
+2. Benchmark Dataset
+
+   Curated scenarios
+
+3. Production Replay
+
+   Real customer conversations
+
+Not all evaluations begin the same way.
+
+
 # Step 3 — Execute
 
 Every scenario is executed.
@@ -95,6 +112,12 @@ Collect
                 Logs
 
                 Cost
+
+execution isn't always the same.
+
+Chat Agent, Voice Agent, Coding agent every agent has there own execution steps.
+
+Execution depends on SUT (System Under Test)
 
 # Step 4 — Evaluate
 
@@ -147,3 +170,37 @@ Example
             Booking Success
             
             97%
+
+# Step 6 — Compare
+
+Compare
+
+Old vs New
+
+        Booking Success
+
+        Old
+
+        92%
+
+        New
+
+        95%
+
+This tells whether the change improved things.
+
+
+What does every Evaluation Framework fundamentally need .
+
+I think it's only five thinks.
+
+        System Under Test
+
+        Scenario
+
+        Execution
+
+        Evaluator
+
+        Result
+
